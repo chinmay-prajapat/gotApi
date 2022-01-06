@@ -1,5 +1,7 @@
-import got from "./apis/apis";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import got from "./apis/apis";
+
 const Books = () => {
   const [bookData, setBookData] = useState();
   useEffect(() => {
@@ -14,6 +16,18 @@ const Books = () => {
       <div className="ui segment" style={{ marginTop: "10px" }}>
         <h1 style={{ textAlign: "center" }}>WelCome To Got World</h1>
       </div>
+      <p
+        style={{
+          border: "1px solid green",
+          borderRadius: "10px",
+          display: "inline-block",
+          padding: "10px",
+        }}
+      >
+        <Link to="/houses" className="item">
+          Go to Houses
+        </Link>
+      </p>
       {!bookData ? (
         <div className="ui active dimmer">
           <div className="ui text loader">Loading</div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import got from "./apis/apis";
 
 const Houses = () => {
@@ -16,7 +16,18 @@ const Houses = () => {
       <div className="ui segment" style={{ marginTop: "10px" }}>
         <h1 style={{ textAlign: "center" }}>Houses</h1>
       </div>
-
+      <p
+        style={{
+          border: "1px solid green",
+          borderRadius: "10px",
+          display: "inline-block",
+          padding: "10px",
+        }}
+      >
+        <Link to="/" className="item">
+          Go to Books
+        </Link>
+      </p>
       {!bookData ? (
         <div className="ui active dimmer">
           <div className="ui text loader">Loading</div>
