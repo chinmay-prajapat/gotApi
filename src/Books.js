@@ -16,7 +16,7 @@ const Books = () => {
   return (
     <div className="ui container">
       <div className="ui segment" style={{ marginTop: "10px" }}>
-        <h1 style={{ textAlign: "center" }}>WelCome To Got World</h1>
+        <h1 style={{ textAlign: "center" }}>Welcome To GOT World</h1>
       </div>
       <p className="link">
         <Link to="/houses" className="item">
