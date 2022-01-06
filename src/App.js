@@ -7,8 +7,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <Books /> */}
-        <Houses />
+        <BrowserRouter>
+          <div>
+            <Route path="/" exact component={Books} />
+            <Route path="/houses" exact component={Houses} />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }
