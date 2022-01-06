@@ -1,0 +1,20 @@
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 20px;
+}
+.link {
+  border: 1px solid green;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.ui relaxed divided list {
+  margin: 30px 0 30px 0;
+}
+.ui cards {
+  padding: 2px 16px;
+}

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./css/style.css";
+
 import got from "./apis/apis";
 
 const Books = () => {
@@ -10,20 +12,13 @@ const Books = () => {
       setBookData(data);
     })();
   }, []);
-  console.log(bookData);
+
   return (
     <div className="ui container">
       <div className="ui segment" style={{ marginTop: "10px" }}>
         <h1 style={{ textAlign: "center" }}>WelCome To Got World</h1>
       </div>
-      <p
-        style={{
-          border: "1px solid green",
-          borderRadius: "10px",
-          display: "inline-block",
-          padding: "10px",
-        }}
-      >
+      <p className="link">
         <Link to="/houses" className="item">
           Go to Houses
         </Link>
@@ -33,10 +28,7 @@ const Books = () => {
           <div className="ui text loader">Loading</div>
         </div>
       ) : (
-        <div
-          className="ui relaxed divided list"
-          style={{ margin: "30px 0 30px 0" }}
-        >
+        <div className="ui relaxed divided list">
           {bookData.map((book, index) => {
             const {
               name,
@@ -53,7 +45,7 @@ const Books = () => {
                     <i className="fas fa-book"></i>&nbsp;{name}
                   </p>
 
-                  <div class="ui list">
+                  <div class="ui list" style={{ margin: "10px" }}>
                     <div className="item">
                       <div class="content">
                         <b>Total Pages:&nbsp;</b>
