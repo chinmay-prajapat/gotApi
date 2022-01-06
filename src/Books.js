@@ -72,7 +72,7 @@ const Books = () => {
           })}
         </div>
       )}
-      <hr style={{ padding: "10px" }} />
+      <hr />
     </div>
   );
 };
