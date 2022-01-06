@@ -11,7 +11,8 @@ const Books = () => {
   console.log(data);
   return (
     <div>
-      <h1>Books</h1>
+      <h1>WelCome To Got Family</h1>
+      {!data ? <p>Loading...</p> : <p>Data</p>}
     </div>
   );
 };
